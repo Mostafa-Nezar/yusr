@@ -13,7 +13,7 @@ import { AppointmentService } from './appointment.service.js';
 import { BookAppointmentDto } from './dto/book-appointment.dto/book-appointment.dto.js';
 import { UpdateAppointmentStatusDto } from './dto/update-appointment-status.dto/update-appointment-status.dto.js';
 
-@Controller('api/Appointment')
+@Controller(['Appointment', 'api/Appointment'])
 export class AppointmentController {
   constructor(
     private readonly appointmentService: AppointmentService,

@@ -3,7 +3,7 @@ import type { Response } from 'express';
 
 import { PharmacyService } from './pharmacy.service.js';
 
-@Controller('api/Pharmacy')
+@Controller(['Pharmacy', 'api/Pharmacy'])
 export class PharmacyController {
   constructor(private readonly pharmacyService: PharmacyService) {}
 

@@ -2,7 +2,7 @@ import { BadRequestException, Body, Controller, Delete, Get, Param, Post, Put, Q
 import { MedicationService } from './medication.service.js';
 import { MedicationRequestDto } from './dto/medication-request.dto/medication-request.dto.js';
 
-@Controller('api/Medication')
+@Controller(['Medication', 'api/Medication'])
 export class MedicationController {
   constructor(private readonly medicationService: MedicationService ) {}
 

@@ -10,7 +10,7 @@ import {
 import { ProviderService } from './provider.service.js';
 import { UpdateProviderProfileDto } from './dto/update-provider-profile.dto/update-provider-profile.dto.js';
 
-@Controller('api/Provider')
+@Controller(['Provider', 'api/Provider'])
 export class ProviderController {
   constructor(private readonly providerService: ProviderService) {}
 
