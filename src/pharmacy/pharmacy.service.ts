@@ -3,7 +3,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { existsSync } from 'fs';
 
-import { Prescription, PrescriptionDocument } from './schemas/prescription.schema';
+import { Prescription, PrescriptionDocument } from './schemas/prescription.schema.js';
 
 @Injectable()
 export class PharmacyService {

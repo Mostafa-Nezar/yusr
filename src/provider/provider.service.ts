@@ -6,9 +6,9 @@ import {
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 
-import { Provider, ProviderDocument } from './schemas/provider.schema/provider.schema';
-import { UpdateProviderProfileDto } from './dto/update-provider-profile.dto/update-provider-profile.dto';
-import { User, UserDocument } from '../auth/schemas/user.schema';
+import { Provider, ProviderDocument } from './schemas/provider.schema/provider.schema.js';
+import { UpdateProviderProfileDto } from './dto/update-provider-profile.dto/update-provider-profile.dto.js';
+import { User, UserDocument } from '../auth/schemas/user.schema.js';
 
 @Injectable()
 export class ProviderService {

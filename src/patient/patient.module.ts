@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 
-import { PatientController } from './patient.controller';
-import { PatientService } from './patient.service';
-import { Patient, PatientSchema } from './schemas/patient.schema/patient.schema';
+import { PatientController } from './patient.controller.js';
+import { PatientService } from './patient.service.js';
+import { Patient, PatientSchema } from './schemas/patient.schema/patient.schema.js';
 
 @Module({
   imports: [

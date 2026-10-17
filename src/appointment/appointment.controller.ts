@@ -9,9 +9,9 @@ import {
   Query,
 } from '@nestjs/common';
 
-import { AppointmentService } from './appointment.service';
-import { BookAppointmentDto } from './dto/book-appointment.dto/book-appointment.dto';
-import { UpdateAppointmentStatusDto } from './dto/update-appointment-status.dto/update-appointment-status.dto';
+import { AppointmentService } from './appointment.service.js';
+import { BookAppointmentDto } from './dto/book-appointment.dto/book-appointment.dto.js';
+import { UpdateAppointmentStatusDto } from './dto/update-appointment-status.dto/update-appointment-status.dto.js';
 
 @Controller('api/Appointment')
 export class AppointmentController {

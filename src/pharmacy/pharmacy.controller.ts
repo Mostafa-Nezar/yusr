@@ -1,7 +1,7 @@
 import { Controller, Get, Param, Post, Res, ServiceUnavailableException } from '@nestjs/common';
 import type { Response } from 'express';
 
-import { PharmacyService } from './pharmacy.service';
+import { PharmacyService } from './pharmacy.service.js';
 
 @Controller('api/Pharmacy')
 export class PharmacyController {

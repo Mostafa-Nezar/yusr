@@ -3,9 +3,9 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { JwtModule } from '@nestjs/jwt';
 
-import { AuthService } from './auth.service';
-import { AuthController } from './auth.controller';
-import { User, UserSchema } from './schemas/user.schema';
+import { AuthService } from './auth.service.js';
+import { AuthController } from './auth.controller.js';
+import { User, UserSchema } from './schemas/user.schema.js';
 
 @Module({
   imports: [

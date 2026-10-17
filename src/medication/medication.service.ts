@@ -8,8 +8,8 @@ import { Model } from 'mongoose';
 import {
   Medication,
   MedicationDocument,
-} from './schemas/medication.schema/medication.schema';
-import { MedicationRequestDto } from './dto/medication-request.dto/medication-request.dto';
+} from './schemas/medication.schema/medication.schema.js';
+import { MedicationRequestDto } from './dto/medication-request.dto/medication-request.dto.js';
 
 @Injectable()
 export class MedicationService {

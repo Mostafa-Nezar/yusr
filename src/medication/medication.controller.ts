@@ -1,6 +1,6 @@
 import { BadRequestException, Body, Controller, Delete, Get, Param, Post, Put, Query } from '@nestjs/common';
-import { MedicationService } from './medication.service';
-import { MedicationRequestDto } from './dto/medication-request.dto/medication-request.dto';
+import { MedicationService } from './medication.service.js';
+import { MedicationRequestDto } from './dto/medication-request.dto/medication-request.dto.js';
 
 @Controller('api/Medication')
 export class MedicationController {

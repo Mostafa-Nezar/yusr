@@ -3,14 +3,14 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { AuthModule } from './auth/auth.module';
-import { AppointmentModule } from './appointment/appointment.module';
-import { MedicationModule } from './medication/medication.module';
-import { ProviderModule } from './provider/provider.module';
-import { PatientModule } from './patient/patient.module';
-import { PharmacyModule } from './pharmacy/pharmacy.module';
+import { AppController } from './app.controller.js';
+import { AppService } from './app.service.js';
+import { AuthModule } from './auth/auth.module.js';
+import { AppointmentModule } from './appointment/appointment.module.js';
+import { MedicationModule } from './medication/medication.module.js';
+import { ProviderModule } from './provider/provider.module.js';
+import { PatientModule } from './patient/patient.module.js';
+import { PharmacyModule } from './pharmacy/pharmacy.module.js';
 
 @Module({
   imports: [

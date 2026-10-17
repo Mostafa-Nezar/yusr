@@ -1,12 +1,12 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 
-import { AppointmentService } from './appointment.service';
-import { AppointmentController } from './appointment.controller';
+import { AppointmentService } from './appointment.service.js';
+import { AppointmentController } from './appointment.controller.js';
 import {
   Appointment,
   AppointmentSchema,
-} from './schemas/appointment.schema/appointment.schema';
+} from './schemas/appointment.schema/appointment.schema.js';
 
 @Module({
   imports: [

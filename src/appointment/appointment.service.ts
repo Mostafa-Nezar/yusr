@@ -8,9 +8,9 @@ import { Model } from 'mongoose';
 import {
   Appointment,
   AppointmentDocument,
-} from './schemas/appointment.schema/appointment.schema';
-import { BookAppointmentDto } from './dto/book-appointment.dto/book-appointment.dto';
-import { UpdateAppointmentStatusDto } from './dto/update-appointment-status.dto/update-appointment-status.dto';
+} from './schemas/appointment.schema/appointment.schema.js';
+import { BookAppointmentDto } from './dto/book-appointment.dto/book-appointment.dto.js';
+import { UpdateAppointmentStatusDto } from './dto/update-appointment-status.dto/update-appointment-status.dto.js';
 
 @Injectable()
 export class AppointmentService {

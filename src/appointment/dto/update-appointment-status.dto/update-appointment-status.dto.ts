@@ -1,5 +1,5 @@
 import { IsNotEmpty, IsEnum } from 'class-validator';
-import { AppointmentStatus } from '../../enums/appointment-status.enum';
+import { AppointmentStatus } from '../../enums/appointment-status.enum.js';
 
 export class UpdateAppointmentStatusDto {
   @IsNotEmpty()

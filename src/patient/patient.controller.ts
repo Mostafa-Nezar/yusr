@@ -1,6 +1,6 @@
 import { Body, Controller, Get, Put } from '@nestjs/common';
-import { PatientService } from './patient.service';
-import { UpdatePatientProfileDto } from './dto/update-patient-profile.dto/update-patient-profile.dto';
+import { PatientService } from './patient.service.js';
+import { UpdatePatientProfileDto } from './dto/update-patient-profile.dto/update-patient-profile.dto.js';
 
 @Controller('api/Patient')
 export class PatientController {

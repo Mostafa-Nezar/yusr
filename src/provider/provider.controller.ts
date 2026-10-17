@@ -7,8 +7,8 @@ import {
   Query,
 } from '@nestjs/common';
 
-import { ProviderService } from './provider.service';
-import { UpdateProviderProfileDto } from './dto/update-provider-profile.dto/update-provider-profile.dto';
+import { ProviderService } from './provider.service.js';
+import { UpdateProviderProfileDto } from './dto/update-provider-profile.dto/update-provider-profile.dto.js';
 
 @Controller('api/Provider')
 export class ProviderController {

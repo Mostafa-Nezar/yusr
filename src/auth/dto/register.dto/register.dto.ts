@@ -5,7 +5,7 @@ import {
   IsOptional,
   IsEnum,
 } from 'class-validator';
-import { Role, PatientType, ProviderType } from '../../enums/roles.enum';
+import { Role, PatientType, ProviderType } from '../../enums/roles.enum.js';
 
 export class RegisterDto {
   @IsString()
