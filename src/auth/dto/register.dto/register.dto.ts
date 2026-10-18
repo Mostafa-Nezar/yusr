@@ -20,19 +20,19 @@ export class RegisterDto {
   password: string;
 
   @IsEnum(Role, {
-    message: 'role must be a valid role (1: PATIENT, 2: PROVIDER, 3: ADMIN)',
+    message: 'role must be a valid numeric user category (0 through 10)',
   })
   role: Role;
 
   @IsOptional()
   @IsEnum(PatientType, {
-    message: 'patientType must be valid (1: NORMAL, 2: CHRONIC, 3: ELDERLY)',
+    message: 'patientType must be valid (0: ELDERLY, 1: DISABILITY)',
   })
   patientType?: PatientType | null;
 
   @IsOptional()
   @IsEnum(ProviderType, {
-    message: 'providerType must be valid (1: DOCTOR, 2: NURSE, 3: PHYSIOTHERAPIST)',
+    message: 'providerType must be valid (2: DOCTOR, 3: PHARMACY, 4: PHYSIOTHERAPIST, 5: NURSE)',
   })
   providerType?: ProviderType | null;
 }
